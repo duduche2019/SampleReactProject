@@ -33,6 +33,11 @@ export default class Page1 extends Component {
         this.props.navigation.navigate({routeName: "Page2"})
     };
 
+    navigateToPage3() {
+
+      this.props.navigation.navigate({routeName: "Page3"})
+  };
+
     render() {
         return (
           <View style={styles.container}>
@@ -47,6 +52,11 @@ export default class Page1 extends Component {
             <Button
               onPress={() =>this.navigateToPage2()}
               title="Change to Page2"
+              color="#841584"
+            />
+            <Button
+              onPress={() =>this.navigateToPage3()}
+              title="Change to Page3"
               color="#841584"
             />
           </View>
