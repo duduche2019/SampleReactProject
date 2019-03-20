@@ -11,12 +11,15 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, Button} from 'react-native';
 import Page1 from './components/Page1'
 import Page2 from './components/Page2'
+import Page3 from './components/Page3'
+
 import { createStackNavigator, createAppContainer }  from 'react-navigation'
 
                               // Une constante parce que ça ne sera pas modifié
 const RootStack = createStackNavigator({
   Page1: {screen: Page1, title: "Page1"},
-  Page2: {screen: Page2}
+  Page2: {screen: Page2},
+  Page3: {screen: Page3}
 })
 
 const App = createAppContainer(RootStack);
